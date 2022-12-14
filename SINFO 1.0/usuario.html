@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== ANIMACIONES ======== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/carnet.css">
+    <link rel="stylesheet" href="css/user.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!----===== SWIPER.JS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!--SLIDEBAR RESPONSIVE--> 
+    
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="sinfo imagenes/senati_x_200-removebg-preview.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">SINFO</span>
+                    <span class="profession">Anderson Marcelo</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="sinfo.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="usuario.html">
+                            <i class='bx bx-user chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Usuario</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="cursos.html">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="institucion.html">
+                            <i class='bx bxs-institution alt icon' ></i>
+                            <span class="text nav-text">Institucion</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="soporte.html">
+                            <i class='bx bx-support icon' ></i>
+                            <span class="text nav-text">Soporte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/SENATI WEB - 3.0/login-sinfo.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Cerrar Sesión</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <!--TODO SOBRE LA PRIMERA SECCION--> 
+    <section class="home" id="home">
+        <div class="animate__animated animate__fadeIn" id="text">Seccion Usuario</div>
+        <div class="animate__animated animate__fadeInDown">
+            <div class="animate__animated animate__pulse animate__delay-1s">
+                <p class="animate__animated animate__fadeIn" id="text20">Carnet de estudiante</p>
+            </div>
+        </div>
+        <main class="animate__animated animate__rotateInDownRight animate__delay-1s" id="imagem__background">
+            <div class="card__giratorio">
+                <div class="card__giratorio-conteudo">
+                    <div class="card__giratorio-conteudo--frente">
+                        <img src="User imagenes/—Pngtree—vector male student icon_4151037.png" alt="Logo mastercadr" class="logo-mastercadr">
+                    </div>
+                    <div class="card__giratorio-conteudo--traseira">
+                        <div id="laFecha"></div>
+                        <div id= "info"></div>
+                        <img src="./User imagenes/senati_x_200-removebg-preview.png" alt="Logo Programador CS" class="cartao__logo-pc">
+                        <h2 class="cartao__numeral">ID: 001457543</h2>
+                        <h3 class="cartao__validade">Ingenieria de Software</h3><br>
+                        <h3 class="cartao__nome-pessoa">Anderson Marcelo</h3>
+                        <h3 class="cartao__conta-corrente">DNI: 73235186 </h3>
+                        <img src="User imagenes/—Pngtree—vector male student icon_4151037.png" alt="Logo mastercadr" class="cartao__logo-mastercadr">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <i class=' animate__animated animate__fadeIn animate__delay-2s bx bxs-user-circle' id="usericon"></i>
+        <p class="animate__animated animate__fadeIn animate__delay-2s correouser">1457543@senati.pe</p>
+        <div class="animate__animated animate__fadeIn" id="padreinfo">
+        <div id="infobasic">
+        <h1>Información Basica</h1>
+        <table class="tableinfo">
+            <tr>
+                <td>Nombre Completo</td>
+                <td>Anderson Marcelo Herrera</td>
+            </tr>
+            <tr>
+                <td>Dirección de correo electrónico</td>
+                <td>1457543@senati.pe</td>
+            </tr>
+            <tr>
+                <td>ID de estudiante</td>
+                <td>001457543</td>
+            </tr>
+            <tr>
+                <td>Contraseña</td>
+                <td>Cambiar Contraseña</td>
+            </tr>
+        </table>
+        <table class="tableinfo">
+            <tr>
+                <td>Dirección postal</td>
+                <td><input class="inputsuser"  type="text" placeholder="Agregar dirección postal"></td>
+            </tr>
+            <tr>
+                <td>Número de teléfono</td>
+                <td><input class="inputsuser" type="text" placeholder="Agregar número de teléfono"></td>
+            </tr>
+            <tr>
+                <td>Número de fax laboral</td>
+                <td><input  class="inputsuser"type="text" placeholder="Agregar número de fax laboral"></td>
+            </tr>
+        </table>
+        </div>
+        </div>
+    </section>
+    
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+    <!----===== SWIPER.JS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="/SENATI WEB - 3.0/js/hora.js"></script>
+</body>
+</html>

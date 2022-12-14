@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== ANIMACIONES ======== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/institucion.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!----===== SWIPER.JS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!--SLIDEBAR RESPONSIVE--> 
+    
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="sinfo imagenes/senati_x_200-removebg-preview.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">SINFO</span>
+                    <span class="profession">Anderson Marcelo</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="sinfo.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="usuario.html">
+                            <i class='bx bx-user chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Usuario</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="cursos.html">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="institucion.html">
+                            <i class='bx bxs-institution alt icon' ></i>
+                            <span class="text nav-text">Institucion</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="soporte.html">
+                            <i class='bx bx-support icon' ></i>
+                            <span class="text nav-text">Soporte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/SENATI WEB - 3.0/login-sinfo.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Cerrar Sesión</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <!--TODO SOBRE LA PRIMERA SECCION--> 
+    <section class="home" id="home">
+        
+        <div class="animate__animated animate__fadeIn" id="text">SENATI</div>
+        <p class="animate__animated animate__fadeIn" id="text20">EL FUTURO ESTA EN NUESTRAS MANOS</p>
+        <img src="/SINFO 1.0/Menu Imagenes/torre2.jpg" class="animate__animated animate__fadeIn torreinst" alt="">
+        <p class="animate__animated animate__fadeIn" id="text50">Servicio Nacional de Adiestramiento en Trabajo Industrial
+            SENATI lleva 59 años brindando la mejor educación para las ocupaciones profesionales de la actividad industrial manufacturera y de las labores de instalación, reparación y mantenimiento.</p>
+            <footer class="footerinsti">
+                <div class="redes-container">
+                    <div class="animate__animated animate__fadeIn" id="redes">
+                        <ul>
+                            <li><a href="https://es-la.facebook.com/SenatiOficial/" target="_blank" class="facebook"><i class='bx bxl-facebook' ></i></a></li>
+                            <li><a href="https://twitter.com/SENATI_PERU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="twiter"><i class='bx bxl-twitter' ></i></a></li>
+                            <li><a href="https://www.instagram.com/senati_oficial/?hl=es" target="_blank"  class="instagram"><i class='bx bxl-instagram'></i></a></li>
+                            <li><a href="https://www.linkedin.com/school/senati/" target="_blank" class="linked"><i class='bx bxl-linkedin'></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+            </footer>
+    </section>
+    
+    <script>
+        const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+    <!----===== SWIPER.JS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
